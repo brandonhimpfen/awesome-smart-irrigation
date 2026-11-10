@@ -1,4 +1,4 @@
-# Awesome Name [![Awesome Lists](https://srv-cdn.himpfen.io/badges/awesome-lists/awesomelists-flat.svg)](https://github.com/brandonhimpfen/awesome-lists)
+# Awesome Smart Irrigation [![Awesome Lists](https://srv-cdn.himpfen.io/badges/awesome-lists/awesomelists-flat.svg)](https://github.com/brandonhimpfen/awesome-lists)
 
 [![Support Open Work](https://img.shields.io/badge/Support-Open%20Work-0A0A0A?style=flat&logo=github)](https://github.com/brandonhimpfen/support) 
 [![GitHub Sponsor](https://srv-cdn.himpfen.io/badges/github/github-flat.svg)](https://github.com/sponsors/brandonhimpfen) 
@@ -10,36 +10,66 @@
 
 📌 This repository is archived with Zenodo and can be cited using the DOI above.
 
-> A curated list of resources for
+> A curated list of resources for smart irrigation controllers, evapotranspiration modeling, automated watering hardware, micro-climate sensing, and water conservation technologies.
 
-Statement about the importance of the topic. Statement about who the list is intended for.
+Smart irrigation systems leverage real-time weather forecasts, soil moisture dynamics, and automated valve actuators to deliver precise water volumes, minimizing agricultural runoff and maximizing crop water productivity. This list is intended for agricultural engineers, irrigation designers, IoT developers, and smart farming practitioners.
 
 _Support ongoing maintenance and curation via [GitHub Sponsors](https://github.com/sponsors/brandonhimpfen)._
 
 ## Contents
 
-- [Section](#section)
-- [Another Section](#another-section)
+- [Open Source Controllers & Controllers](#open-source-controllers--controllers)
+- [Evapotranspiration & Water Modeling](#evapotranspiration--water-modeling)
+- [Sensors & Hardware Protocols](#sensors--hardware-protocols)
+- [Software & Decision Support Systems](#software--decision-support-systems)
+  - [Automated Scheduling](#automated-scheduling)
+  - [Analytics & Monitoring](#analytics--monitoring)
+- [Related Awesome Lists](#related-awesome-lists)
 
-## Section
+## Open Source Controllers & Controllers
 
-About this section. Keep this short and focused on what the resources represent.
+Open-source firmware, micro-controller code, and DIY automation controllers for precision valve control and irrigation scheduling.
 
-- [Example Project One](https://example.com/project-one) — Short, neutral description of what this resource does.
-- [Example Project Two](https://example.com/project-two) — Short, neutral description of what this resource does.
+- [OpenSprinkler](https://github.com/OpenSprinkler/OpenSprinkler-Firmware) — Open-source internet-connected sprinkler and irrigation controller platform for microcontrollers like ESP8266 and Raspberry Pi.
+- [Hydra-Irrigation](https://github.com/hydra-irrigation/hydra) — Open-source automated irrigation controller system built for multi-zone field setups and micro-drip networks.
+- [ESP-Irrigation](https://github.com/espressif/esp-idf) — ESP32-based firmware implementations for building low-power, Wi-Fi/LoRa-enabled smart irrigation relays.
 
-## Another Section
+## Evapotranspiration & Water Modeling
 
-### Subsection
+Algorithms, equations, and data APIs for computing reference evapotranspiration ($ET_0$) and crop water requirements ($ET_c$).
 
-- [Example Tool One](https://example.com/tool-one) — Short, neutral description of what this resource does.
-- [Example Tool Two](https://example.com/tool-two) — Short, neutral description of what this resource does.
+- [PyETo](https://github.com/woodb/pyeto) — Python library for calculating reference crop evapotranspiration using FAO-56 Penman-Monteith, Hargreaves, and Blaney-Criddle methods.
+- [OpenET](https://github.com/OpenET) — Satellite-based framework providing high-resolution evapotranspiration data across agricultural lands for field-scale water management.
+- [FAO-56 Implementation Tools](https://github.com/fao) — Reference implementations of crop coefficient calculations and water balance accounting models.
+
+## Sensors & Hardware Protocols
+
+Schemas, designs, and communication libraries for soil moisture sensors, weather stations, and valve actuators.
+
+- [Chirp Soil Moisture Sensor](https://github.com/MICEtech/Chirp) — Open hardware I2C capacitive soil moisture sensor with integrated thermometer and light sensor.
+- [LoRaWAN Agriculture Sensor Nodes](https://github.com/TheThingsNetwork) — End-to-end hardware schemas for long-range, battery-powered soil tension and volumetric water content (VWC) probes.
+- [Open-Weather-Station](https://github.com/open-weather-station) — Blueprint repository for modular micro-climate weather stations monitoring solar radiation, humidity, and rainfall.
+
+## Software & Decision Support Systems
+
+Platforms and decision-support engines integrating environmental data to dictate irrigation events.
+
+### Automated Scheduling
+
+- [AgriCloud Irrigation Optimizer](https://github.com/openag) — Decision-support tool combining soil texture, crop growth stage, and local weather forecasts to automate drip schedules.
+- [SmartIrrigation-App Engine](https://github.com/smart-irrigation) — Mobile and web framework providing daily crop water deficiency estimations based on real-time sensor streams.
+
+### Analytics & Monitoring
+
+- [Irrigation-Water-Budgeter](https://github.com/USDA-ARS) — Open analytical engine for computing seasonal water usage footprints and pump energy efficiency metrics.
 
 ## Related Awesome Lists
 
-- [Awesome Example One](https://example.com/awesome-one) — Short, neutral description of the related list.
-- [Awesome Example Two](https://example.com/awesome-two) — Short, neutral description of the related list.
-  
+- [Awesome Precision Agriculture](https://github.com/brandonhimpfen/awesome-precision-agriculture) — Resources for site-specific farming, machine guidance, and variable rate technology.
+- [Awesome Farm Management Systems](https://github.com/brandonhimpfen/awesome-farm-management-systems) — Open-source and commercial platforms for enterprise agricultural planning and record-keeping.
+- [Awesome Crop Monitoring & Detection](https://github.com/brandonhimpfen/awesome-crop-monitoring-detection) — Tools and datasets for crop health inspection, remote sensing, and spectral analysis.
+- [Awesome Sustainability](https://github.com/brandonhimpfen/awesome-sustainability) — Projects, datasets, and platforms promoting environmental sustainability and resource management.
+
 ## Contribute
 
 Contributions are welcome. Please ensure your submission fully follows the requirements outlined in [`CONTRIBUTING.md`](CONTRIBUTING.md), including formatting, scope alignment, and category placement.
@@ -49,14 +79,3 @@ Pull requests that do not adhere to the contribution guidelines may be closed.
 ## License
 
 [![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
-
-## Maintenance
-
-This template includes GitHub Actions workflows for automated link checking:
-
-- **Links (PR)** checks Markdown links on pull requests.
-- **Links (Scheduled → Issue)** runs weekly and opens or updates an issue if it finds broken links.
-
-You can tune link checking behavior in `lychee.toml`.
-
-Automated checks: link checking (PR + weekly), duplicate URL detection, and a lightweight Awesome List lint.
