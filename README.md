@@ -8,8 +8,6 @@
 [![X](https://srv-cdn.himpfen.io/badges/twitter/twitter-flat.svg)](https://x.com/ListsAwesome) 
 [![Facebook](https://srv-cdn.himpfen.io/badges/facebook-pages/facebook-pages-flat.svg)](https://www.facebook.com/awesomelists)
 
-📌 This repository is archived with Zenodo and can be cited using the DOI above.
-
 > A curated list of resources for smart irrigation controllers, evapotranspiration modeling, automated watering hardware, micro-climate sensing, and water conservation technologies.
 
 Smart irrigation systems leverage real-time weather forecasts, soil moisture dynamics, and automated valve actuators to deliver precise water volumes, minimizing agricultural runoff and maximizing crop water productivity. This list is intended for agricultural engineers, irrigation designers, IoT developers, and smart farming practitioners.
